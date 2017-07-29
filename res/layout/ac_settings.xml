@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/myWindowBackground"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="20.0dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="USER PROFILE"
+                android:textColor="#ff008a43"
+                android:textSize="15.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <LinearLayout
+                android:id="@+id/lvMyProfileSettings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_row_list_white_press"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5.0dp"
+                    android:layout_weight="0.65"
+                    android:gravity="center_vertical"
+                    android:text="My Profile"
+                    android:textColor="#ff000000"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/tvMyNameSettings"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.35"
+                    android:gravity="center_vertical"
+                    android:text="your name"
+                    android:textColor="#ff000000"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <!-- Reminder Settings-->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:gravity="left"
+                android:text="REMINDER SETTINGS"
+                android:textColor="#ff008a43"
+                android:textSize="15.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <LinearLayout
+                android:id="@+id/lvReminderSettings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_row_list_white_press"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5.0dp"
+                        android:layout_weight="0.65"
+                        android:gravity="center_vertical"
+                        android:text="Set Reminder"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvReminderStateSettings"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.35"
+                        android:gravity="center_vertical"
+                        android:text="no reminder is set"
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- update settings -->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:gravity="left"
+                android:text="UPDATE SETTINGS"
+                android:textColor="#ff008a43"
+                android:textSize="15.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <LinearLayout
+                android:id="@+id/lvChangePasswordSettings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_row_list_white_press"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5.0dp"
+                    android:gravity="center_vertical"
+                    android:text="Change Password"
+                    android:textColor="#ff000000"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dp"
+                    android:src="@drawable/dotted_line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lvChangeMobileNoSettings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_row_list_white_press"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5.0dp"
+                    android:gravity="center_vertical"
+                    android:text="Change Mobile Number"
+                    android:textColor="#ff000000"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dp"
+                    android:src="@drawable/dotted_line" />
+            </LinearLayout>
+
+
+            <!-- database settigns-->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:gravity="left"
+                android:text="DATABASE SETTINGS"
+                android:textColor="#ff008a43"
+                android:textSize="15.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <LinearLayout
+                android:id="@+id/lvExportDatabaseSettings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_row_list_white_press"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5.0dp"
+                        android:layout_weight="0.65"
+                        android:gravity="center_vertical"
+                        android:text="Export Database"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvExportDatabaseStateSettings"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".35"
+                        android:gravity="center_vertical"
+                        android:text="no database is exported"
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dotted_line" />
+
+            <LinearLayout
+                android:id="@+id/lvImportDatabaseSettings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_row_list_white_press"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15.0dp"
+                        android:layout_weight="0.65"
+                        android:gravity="center_vertical"
+                        android:text="Import Database"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvImportDatabaseStateSettings"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35"
+                        android:gravity="center_vertical"
+                        android:text="no database is imported"
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

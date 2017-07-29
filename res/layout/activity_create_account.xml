@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?attr/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:gravity="center"
+            android:paddingBottom="20.0dip"
+            android:text="Please Create Your Account"
+            android:textColor="#ffffff"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:gravity="left"
+            android:text="Name"
+            android:textColor="#ffffffff" />
+
+        <EditText
+            android:id="@+id/etNameCA"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/bg_row_white"
+            android:ems="12"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="5.0dip" />
+
+        <requestFocus />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:gravity="left"
+            android:text="Mobile Number"
+            android:textColor="#ffffffff" />
+
+        <EditText
+            android:id="@+id/etMobileNoCA"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/bg_row_white"
+            android:ems="12"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:paddingLeft="5.0dip" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:gravity="left"
+            android:text="Password"
+            android:textColor="#ffffffff" />
+
+        <EditText
+            android:id="@+id/etPasswordCA"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/bg_row_white"
+            android:ems="12"
+            android:inputType="textWebPassword"
+            android:maxLines="1"
+            android:paddingLeft="5.0dip" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:gravity="left"
+            android:text="Re-enter Password"
+            android:textColor="#ffffffff" />
+
+        <EditText
+            android:id="@+id/etRePasswordCA"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/bg_row_white"
+            android:ems="12"
+            android:inputType="textWebPassword"
+            android:maxLines="1"
+            android:paddingLeft="5.0dip" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="20.0dip"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bCreareAccountCA"
+                android:layout_width="170.0dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/bg_button"
+                android:text="Create Account"
+                android:textColor="#ffffffff" />
+        </TableRow>
+    </LinearLayout>
+</ScrollView>

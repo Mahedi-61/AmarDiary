@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/li_ivDrawerImage"
+        android:layout_width="25.0dip"
+        android:layout_height="20.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_about" />
+
+    <TextView
+        android:id="@+id/li_tvDraweritem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="40dp"
+        android:text="hoi na ke"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:textSize="15sp" />
+</LinearLayout>

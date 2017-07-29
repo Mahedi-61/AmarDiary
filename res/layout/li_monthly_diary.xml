@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:paddingTop="3dp">
+
+        <TextView
+            android:id="@+id/tvDateMD"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <!-- study 4 -->
+        <TextView
+            android:id="@+id/tvAcademicMD"
+            android:layout_width="60.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+
+        <TextView
+            android:id="@+id/tvQuranMD"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvHadithMD"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvLiteratureRelegionMD"
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvLiteratureOtherMD"
+            android:layout_width="90.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <!-- class -->
+        <LinearLayout
+            android:layout_width="50.0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/cbclassMD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4.0dip"
+                android:enabled="false"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tvTotalClassMD"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="4.0dip"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="13.0sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <!-- namaz 2 -->
+        <TextView
+            android:id="@+id/tvJamaatMD"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvKajjaMD"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#ffff0000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <!-- fulkuri 2 -->
+        <TextView
+            android:id="@+id/tvCallMD"
+            android:layout_width="70.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvOtherMD"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <!-- contact 12 -->
+        <TextView
+            android:id="@+id/tvOvijatriMD"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvDhimanMD"
+            android:layout_width="40.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvBikoshitoMD"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvSuvasitoMD"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvMemberMD"
+            android:layout_width="40.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvCoukosMD"
+            android:layout_width="40.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvOgrropothikMD"
+            android:layout_width="60.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvTalentStudentMD"
+            android:layout_width="60.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvAdviserMD"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvWellWisherMD"
+            android:layout_width="60.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvTeacherMD"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvGuardianMD"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="70.0dip"
+            android:layout_marginRight="4.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/cbServiceBankMD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false" />
+
+            <TextView
+                android:id="@+id/tvTotalSeviceBankMD"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="13.0sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="70.0dip"
+            android:layout_marginRight="4.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/cbNewspaperMD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false" />
+
+            <TextView
+                android:id="@+id/tvTotalNewspaperMD"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="13.0sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="50.0dip"
+            android:layout_marginRight="4.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/cbGameMD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false" />
+
+            <TextView
+                android:id="@+id/tvTotalGameMD"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="13.0sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvSleepMD"
+            android:layout_width="40.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="70.0dp"
+            android:layout_marginRight="4.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/cbCriticismMD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false" />
+
+            <TextView
+                android:id="@+id/tvTotalCriticismMD"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="13.0sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

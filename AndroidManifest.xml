@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bd.org.fulkuri.amardiary" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver android:name="bd.org.fulkuri.model.AlarmReceiver" android:process=":remote"/>
+        <receiver android:enabled="false" android:name="bd.org.fulkuri.model.SampleBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="bd.org.fulkuri.amardiary.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="bd.org.fulkuri.amardiary.CreateAccount"/>
+        <activity android:name=".MonthlyDiary" android:screenOrientation="landscape"/>
+        <activity android:name="bd.org.fulkuri.amardiary.MainActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="bd.org.fulkuri.amardiary.MonthlyPlan"  android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".MonthlyReport" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="bd.org.fulkuri.amardiary.Settings"/>
+        <activity android:name=".Search"/>
+        <activity android:name="bd.org.fulkuri.amardiary.SearchDiaryByPreviousDays"/>
+        <activity android:name=".DiaryStatistics"/>
+        <activity android:name="bd.org.fulkuri.amardiary.Help"/>
+        <activity android:name="bd.org.fulkuri.amardiary.About"/>
+    </application>
+
+</manifest>

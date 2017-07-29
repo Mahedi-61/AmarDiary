@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary">
+
+    <TextView
+        android:id="@+id/tvAppNameLA"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:padding="5.0dip"
+        android:textColor="#FFF"
+        android:textSize="26.0dp" />
+
+    <TextView
+        android:id="@+id/tvForgotPasswordLA"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="15dp"
+        android:gravity="center"
+        android:text="Forgot password ?"
+        android:textColor="#FFF"
+        android:textSize="14.0sp" />
+
+    <LinearLayout
+        android:layout_below="@id/tvAppNameLA"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="100.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etPasswordLA"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="5.0dip"
+                android:hint="Password"
+                android:inputType="textWebPassword"
+                android:textColor="#FFF"
+                android:textColorHint="@color/hint_foreground_material_dark" />
+
+            <requestFocus />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbRemeberPasswordLA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:gravity="left"
+                android:text="Remember Password"
+                android:textColor="#FFF"
+                android:textSize="13sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50.0dip"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bLoginLA"
+                android:layout_width="150dp"
+                android:layout_height="50.0dip"
+                android:background="@drawable/b_login"
+                android:gravity="center"
+                android:text="Log in"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+        </TableRow>
+    </LinearLayout>
+</RelativeLayout>

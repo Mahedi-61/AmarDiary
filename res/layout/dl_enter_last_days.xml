@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff8f8f8"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="5.0dip"
+        android:gravity="left"
+        android:text="Please enter total number of previous days to see the summary"
+        android:textSize="14sp"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/etLastDaysSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="5.0dip"
+        android:ems="12"
+        android:inputType="number"
+        android:maxLength="3"
+        android:maxLines="1" />
+
+    <requestFocus />
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/dl_bCancelEnterLastDaysSearch"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:text="Cancel"
+            android:background="@drawable/bg_button"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <Button
+            android:id="@+id/dl_bSaveEnterLastDaysSearch"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:text="Find"
+            android:background="@drawable/bg_button"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+    </TableRow>
+</LinearLayout>

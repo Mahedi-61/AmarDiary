@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/myWindowBackground"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_actionbar"
+            layout="@layout/toolbar_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6.0dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:background="?attr/colorPrimary">
+
+                    <ImageButton
+                        android:id="@+id/ibPreviousDD"
+                        android:layout_width="40.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:background="@drawable/b_arrow_left" />
+
+                    <TextView
+                        android:id="@+id/tvTitleDD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5.0dip"
+                        android:text="Kicu Ekta hobe"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.0sp" />
+
+                    <ImageButton
+                        android:id="@+id/ibNextDD"
+                        android:layout_width="40.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5.0dip"
+                        android:background="@drawable/b_arrow_right" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider_color" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@color/item1"
+                    android:orientation="vertical"
+                    android:padding="5.0dip">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffd0e4ea"
+                            android:gravity="center"
+                            android:text="অধ্যয়ন"
+                            android:textColor="#ff000000"
+                            android:textSize="13.0sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.7"
+                            android:text="একাডেমিক অধ্যয়ন"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etStudyAcademicDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:inputType="numberDecimal"
+                            android:maxLength="4"
+                            android:maxLines="1"
+                            android:textColor="#ff000000" />
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:paddingLeft="10dp"
+                            android:text="ঘন্টা"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.7"
+                            android:text="কুরআন অধ্যয়ন"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etStudyQuranDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:maxLines="1"
+                            android:textColor="#ff000000" />
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:paddingLeft="10dp"
+                            android:text="আয়াত"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.7"
+                            android:text="হাদীস অধ্যয়ন"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etStudyHadithDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:maxLines="1"
+                            android:textColor="#ff000000" />
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:paddingLeft="10dp"
+                            android:text="টি"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.7"
+                            android:text="সাহিত্য অধ্যয়ন(ধর্মীয়)"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etReligonalStudyLiteratureDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:maxLines="1"
+                            android:textColor="#ff000000" />
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:paddingLeft="10dp"
+                            android:text="পৃষ্ঠা"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.7"
+                            android:text="সাহিত্য অধ্যয়ন(অন্যান্য)"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etOtherStudyLiteratureDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:maxLines="1"
+                            android:textColor="#ff000000" />
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:paddingLeft="10dp"
+                            android:text="পৃষ্ঠা"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+                    </TableRow>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@color/item2"
+                    android:orientation="vertical"
+                    android:padding="5.0dip">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffd0e4ea"
+                            android:gravity="center"
+                            android:text="ক্লাস"
+                            android:textColor="#ff000000"
+                            android:textSize="13.0sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="5.0dp"
+                        android:gravity="center_vertical"
+                        android:weightSum="2">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="ক্লাসে উপস্থিতি"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <CheckBox
+                            android:id="@+id/cbPresentClassDD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </TableRow>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@color/item1"
+                    android:orientation="vertical"
+                    android:padding="5.0dip">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffd0e4ea"
+                            android:gravity="center"
+                            android:text="নামাজ"
+                            android:textColor="#ff000000"
+                            android:textSize="13.0sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.7"
+                            android:text="জামায়াত"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etJamaatNamazDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:maxLines="1"
+                            android:textColor="#ff000000" />
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:paddingLeft="10dp"
+                            android:text="ওয়াক্ত"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.7"
+                            android:text="ক্বাযা"
+                            android:textColor="#ffff0000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etKajjaNamazDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:textColor="#ff000000" />
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:paddingLeft="10dp"
+                            android:text="ওয়াক্ত"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+                    </TableRow>
+                </LinearLayout>
+
+                <!-- Fulkuri work 4-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@color/item2"
+                    android:orientation="vertical"
+                    android:padding="5.0sp">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffd0e4ea"
+                            android:gravity="center"
+                            android:text="ফুলকুঁড়ির কাজ"
+                            android:textColor="#ff000000"
+                            android:textSize="13.0sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dp">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.7"
+                            android:text="আহ্বানমূলক কাজ"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etCallForWorkFulkuriDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="numberDecimal"
+                            android:maxLength="4"
+                            android:textColor="#ff000000" />
+
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:paddingLeft="10dp"
+                            android:text="ঘন্টা"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.7"
+                            android:text="অন্যান্য কাজ"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etOtherWorkFulkuriDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="numberDecimal"
+                            android:maxLength="4"
+                            android:textColor="#ff000000" />
+
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:paddingLeft="10dp"
+                            android:text="ঘন্টা"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+                    </TableRow>
+                </LinearLayout>
+
+                <!-- contact 12-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@color/item1"
+                    android:orientation="vertical"
+                    android:padding="5.0sp">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffd0e4ea"
+                            android:gravity="center"
+                            android:text="যোগাযোগ"
+                            android:textColor="#ff000000"
+                            android:textSize="13.0sp" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="10.0dip">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9"
+                            android:text="অভিযাত্রী"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etOvijatriContactDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textColor="#ff000000" />
+
+                        <TextView
+                            android:layout_width="0.0dip"
+                            android:layout_height="15dip"
+                            android:layout_weight="0.4" />
+
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="ধীমান"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etDhimanContactDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textColor="#ff000000" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="10.0dip">
+
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9"
+                            android:text="বিকশিত"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etBikoshitoContactDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:nextFocusRight="@+id/etSuvasitoContactDD"
+                            android:textColor="#ff000000" />
+
+
+                        <TextView
+                            android:layout_width="0.0dip"
+                            android:layout_height="15dip"
+                            android:layout_weight="0.4" />
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="সুবাসিত"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@id/etSuvasitoContactDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textColor="#ff000000" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9"
+                            android:text="সদস্য"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etMemberContactDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textColor="#ff000000" />
+
+                        <TextView
+                            android:layout_width="0.0dip"
+                            android:layout_height="15dip"
+                            android:layout_weight="0.4" />
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.3dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="চৌকস"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etCoukosContactDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textColor="#ff000000" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="10.0dip">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9"
+                            android:text="অগ্রপথিক"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etOgrropothikContactDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textColor="#ff000000" />
+
+                        <TextView
+                            android:layout_width="0.0dip"
+                            android:layout_height="15dip"
+                            android:layout_weight="0.4" />
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="মেধাবী ছাত্র"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etTalentStudentContactDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:paddingRight="5.0dip"
+                            android:textColor="#ff000000" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="10.0dip">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9"
+                            android:text="উপদেষ্টা"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etAdviserContactDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textColor="#ff000000" />
+
+                        <TextView
+                            android:layout_width="0.0dip"
+                            android:layout_height="15dip"
+                            android:layout_weight="0.4" />
+
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="শুভাকাঙ্ক্ষী"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etWellWisherContactDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textColor="#ff000000" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="10.0dip">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9"
+                            android:text="শিক্ষক"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etTeacherContactDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textColor="#ff000000" />
+
+                        <TextView
+                            android:layout_width="0.0dip"
+                            android:layout_height="15dip"
+                            android:layout_weight="0.4" />
+
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="অভিভাবক"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etGuardianContactDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textColor="#ff000000" />
+                    </TableRow>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@color/item2"
+                    android:orientation="vertical"
+                    android:padding="5.0dip">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffd0e4ea"
+                            android:gravity="center"
+                            android:text="বিবিধ"
+                            android:textColor="#ff000000"
+                            android:textSize="13.0sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="5.0dp"
+                        android:gravity="center_vertical"
+                        android:weightSum="2.5">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:text="সেবা ব্যাংক"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <CheckBox
+                            android:id="@+id/cbServiceBankOtherDD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center_vertical"
+                        android:weightSum="2.5">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:text="পত্রপত্রিকা পাঠ"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <CheckBox
+                            android:id="@+id/cbNewspaperOtherDD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center_vertical"
+                        android:weightSum="2.5">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:text="খেলাধুলা ব্যায়াম"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <CheckBox
+                            android:id="@+id/cbGameOtherDD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center_vertical">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:text="ঘুম"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <EditText
+                            android:id="@+id/etHourSleepDD"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:inputType="numberDecimal"
+                            android:maxLength="4"
+                            android:maxLines="1"
+                            android:textColor="#ff000000" />
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="12dp"
+                            android:text="ঘন্টা"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:weightSum="2.5">
+
+                        <bd.org.fulkuri.model.TextViewWithBanglaFont
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:text="আত্মপর্যালোচনা"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0sp" />
+
+                        <CheckBox
+                            android:id="@+id/cbCriticismOtherDD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bSaveDD"
+                    android:layout_width="250dp"
+                    android:layout_height="40.0dip"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_button"
+                    android:gravity="center"
+                    android:text="Save"
+                    android:textColor="#FFF"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragment_drawer"
+        android:name="bd.org.fulkuri.amardiary.NavigationDrawerFragment"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginTop="@dimen/abc_action_bar_default_height_material"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer" />
+</android.support.v4.widget.DrawerLayout>
